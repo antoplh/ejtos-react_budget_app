@@ -11,11 +11,15 @@ import ExpenseTotal from './components/ExpenseTotal';
 import AllocationForm from './components/AllocationForm';
 import ExpenseItem from './components/ExpenseItem';
 import ExpenseList from './components/ExpenseList';
+import Currency from './components/Currency';
 
 import { AppProvider } from './context/AppContext';
 const App = () => {
     return (
         <AppProvider>
+            <style>
+            @import url('https://fonts.googleapis.com/css2?family=Galada&family=Lexend:wght@100;200;300;400&family=Raleway:wght@200;300;400&display=swap')
+            </style>
             <div className='container'>
                 <h1 className='mt-3'>Company's Budget Allocation</h1>
                 <div className='row mt-3'>
@@ -27,6 +31,9 @@ const App = () => {
                     </div>
                     <div className='col-sm'>
                         <ExpenseTotal />
+                    </div>
+                    <div className='col-sm'>
+                        <Currency />
                     </div>
                 </div>
                 <h3 className='mt-3'>Allocation</h3>
